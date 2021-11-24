@@ -199,6 +199,13 @@ a, a:visited {
     margin-right: 16px;
 }
 
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 
 @media (min-width: 680px) {
     .hero-grid {
