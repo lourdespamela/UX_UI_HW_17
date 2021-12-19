@@ -1,128 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <nav class="navbar navbar-light bg-transparent navbar-expand-sm">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo.svg" width="30" height="80" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav d-flex justify-content-end w-100">
-                    <a class="nav-link" href="#">Home</a>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Projects</a>
-                    <a class="nav-link" href="#">Resume</a>
-                    <a class="nav-link" href="#">Contact</a>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-light bg-transparent navbar-expand-sm">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.svg" width="30" height="80" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav d-flex justify-content-end w-100">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="index.html#projects">Projects</a>
+            <a class="nav-link" href="#">Resume</a>
+            <a class="nav-link" href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
     </div>
 
     <!-- Bootstrap col system -->
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-5 offset-md-2 order-2 order-md-1">
-                <img src="images/Nonprofit RWD Mockup.jpg" alt="" class="w-100">
-            </div>
-            <div class="col-12 col-md-3 order-1 order-md-2">
-                <h1>Nonprofit RWD</h1>
-                <h3>Client: FillaHeart4Kids</h3>
-            </div>
+      <div class="row">
+        <div class="col-12 col-md-5 offset-md-2 order-2 order-md-1">
+          <img src="images/Nonprofit RWD Mockup.jpg" alt="" class="w-100" />
         </div>
+        <div class="col-12 col-md-5 col-lg-3 order-1 order-md-2">
+          <h1>Nonprofit RWD</h1>
+          <h3>Client: FillaHeart4Kids</h3>
+        </div>
+      </div>
     </div>
 
     <div class="container py-5">
-        <h2 class="text-center">Design Process</h2>
+      <h2 class="text-center" id="design-process">Design Process</h2>
     </div>
 
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-3">
-                <h3>Executive Summary</h3>
-            </div>
-            <div class="col-12 col-md-9">
-                <p>The FillAHeart4Kids website contains outdated information that is organized in a disorienting and inefficient matter. It is not directly apparent what the organization’s mission is or what their projects entail. </p>
-                <p>Through 6 user interviews, my group members and I learned that in order for users to feel motivated to donate to an organization they want to know how their money will be used and feel a connection to the organization’s mission. The problem with the current design of the website is that the information is scattered throughout the website without an easy way to navigate around it to motivate users to want to donate or feel directly impacted by the organization’s website. As a result, FillaHeart4Kids is not receiving as many donations through their website as they are on their Facebook page. </p>
-                <p>My group and I addressed these issues by redesigning the homepage and highlighting the organization's mission and various projects so that users have information they can connect with. We also revamped the navigation menu by renaming the menu's categories and rearranging the subpages. Lastly, we streamlined the donation process so that users have control over what they donate and know what their money will be used for. </p>
-            </div>
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-4">
+          <nav id="scrollspy" class="navbar navbar-light bg-light py-3">
+            <a class="navbar-brand" href="#design-process">Table of Contents</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#executive-summary"
+                >Executive Summary</a
+              >
+              <a class="nav-link" href="#user-interview-plan"
+                >User Interview Plan</a
+              >
+              <a class="nav-link" href="#user-insights">User Insights</a>
+              <a class="nav-link" href="#user-personas">User Personas</a>
+              <a class="nav-link" href="#new-section">New Section</a>
+            </nav>
+          </nav>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-3">
-                <h3>User Interview Plan</h3>
-            </div>
-            <div class="col-12 col-md-9">
-                <h6 class="font-weight-bold"> Research Question</h6>
-                <p>How might we improve the navigation and layout of the FillaHeart4Kids website in order to streamline the user’s process when donating to increase donation intakes for FillaHeart4Kids and motivate the users to want to donate?</p>
-                <p>My group and I identified three objectives to collect information about when conducting our user interviews. Our first objective was to understand the user’s emotions that lead them to want to donate to donate and volunter. Our second objective was to learn about our user’s navigation habits and preferences. Our third objective was to gain insight about the user’s initial impressions of the FillaHeart4Kids website. </p>
-            </div>
+        <div
+          class="col-8 scrollspy-container"
+          data-spy="scroll"
+          data-target="#scrollspy"
+          data-offset="0"
+        >
+          <h3 class="section-header" id="executive-summary">
+            Executive Summary
+          </h3>
+          <p>
+            The FillAHeart4Kids website contains outdated information that is
+            organized in a disorienting and inefficient matter. It is not
+            directly apparent what the organization’s mission is or what their
+            projects entail.
+          </p>
+          <p>
+            Through 6 user interviews, my group members and I learned that in
+            order for users to feel motivated to donate to an organization they
+            want to know how their money will be used and feel a connection to
+            the organization’s mission. The problem with the current design of
+            the website is that the information is scattered throughout the
+            website without an easy way to navigate around it to motivate users
+            to want to donate or feel directly impacted by the organization’s
+            website. As a result, FillaHeart4Kids is not receiving as many
+            donations through their website as they are on their Facebook page.
+          </p>
+          <p>
+            My group and I addressed these issues by redesigning the homepage
+            and highlighting the organization's mission and various projects so
+            that users have information they can connect with. We also revamped
+            the navigation menu by renaming the menu's categories and
+            rearranging the subpages. Lastly, we streamlined the donation
+            process so that users have control over what they donate and know
+            what their money will be used for.
+          </p>
+          <h3 class="section-header" id="user-interview-plan">
+            User Interview Plan
+          </h3>
+          <h6 class="font-weight-bold">Research Question</h6>
+          <p>
+            How might we improve the navigation and layout of the
+            FillaHeart4Kids website in order to streamline the user’s process
+            when donating to increase donation intakes for FillaHeart4Kids and
+            motivate the users to want to donate?
+          </p>
+          <p>
+            My group and I identified three objectives to collect information
+            about when conducting our user interviews. Our first objective was
+            to understand the user’s emotions that lead them to want to donate
+            to donate and volunter. Our second objective was to learn about our
+            user’s navigation habits and preferences. Our third objective was to
+            gain insight about the user’s initial impressions of the
+            FillaHeart4Kids website.
+          </p>
+          <h3 class="section-header" id="user-insights">User Insights</h3>
+          <h6 class="font-weight-bold">Desire to Donate</h6>
+          <p>
+            We learned that users are motivated to donate to an organization
+            when the process is simple and if they feel connected to the
+            mission. We also learned that the current website does not meet
+            these expectations for the users. See below for direct quotations
+            from our user interviewees:
+          </p>
+          <ul class="bullet-list">
+            <li>“Donation feature is too hard to find”</li>
+            <li>“The site could be more specific about its purpose”</li>
+            <li>“Mission is not prominent on the page”</li>
+            <li>“I want to learn more about how the money is put to use”</li>
+            <li>“I like to feel connected to the cause before donating”</li>
+            <li>“The donation process should be simple”</li>
+            <li>“I want to learn more about how the money is put to use”</li>
+          </ul>
+          <h6 class="font-weight-bold">
+            User Navigation Habits and Preferences
+          </h6>
+          <p>
+            We also learned some of the navigation tools that people prefer to
+            use or that they hope a website has and what some of our users think
+            about FillaHeart4Kids’ navigation system:
+          </p>
+          <ul class="bullet-list">
+            <li>“Expects to be able to find information without struggling”</li>
+            <li>“Prefers specific and apparent navigation tabs”</li>
+            <li>“Thinks top menu bar is too small”</li>
+            <li>“The purpose of some tabs/pages is unclear”</li>
+            <li>“Looks for speed and clarity in navigation”</li>
+            <li>“Drop-downs are helpful”</li>
+            <li>“Good categorization/organization makes browsing easier”</li>
+          </ul>
+          <h6 class="font-weight-bold">Usability Tests</h6>
+          <p>
+            During our user interviews we also conducted 5-second usability
+            tests from our participants to learn what some of their thoughts
+            about the website are. We observed for pain points with the website
+            and what they like about the website:
+          </p>
+          <ul class="bullet-list">
+            <li>“Feels that there are too many different fonts”</li>
+            <li>
+              “Color scheme is fitting because hearts are usually pink and
+              purple
+            </li>
+            <li>
+              “Seems like the page is mostly event focused at first glance”
+            </li>
+            <li>“Too many fonts/does not feel cohesive”</li>
+            <li>“It is not immediately apparent what the site is for”</li>
+            <li>“Site is very bright and vibrant”</li>
+          </ul>
+          <h3 class="section-header" id="user-personas">User Personas</h3>
+          <img
+            class="img-fluid mb-4"
+            src="images/User Persona 1 - Non profit Web Redesign 1.png"/>
+          <img
+            class="img-fluid mb-4"
+            src="images/User Persona 2 - Non profit Web Redesign 2.png"/>
+          <h3 id="new-section" class="section-header">
+            New Section
+          </h3>
         </div>
+      </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-3">
-                <h3>User Insights</h3>
-            </div>
-            <div class="col-12 col-md-9">
-                <h6 class="font-weight-bold">Desire to Donate</h6>
-                <p>We learned that users are motivated to donate to an organization when the process is simple and if they feel connected to the mission. We also learned that the current website does not meet these expectations for the users. See below for direct quotations from our user interviewees:</p>
-                <p>“Donation feature is too hard to find”
-                    “The site could be more specific about its purpose”
-                    “Mission is not prominent on the page”
-                    “I want to learn more about how the money is put to use”
-                    “I like to feel connected to the cause before donating”
-                    “The donation process should be simple”
-                    “I initially thought donations could only be made through PayPal”</p>
-                <h6 class="font-weight-bold">User Navigation Habits and Preferences</h6>
-                <p>We also learned some of the navigation tools that people prefer to use or that they hope a website has and what some of our users think about FillaHeart4Kids’ navigation system:</p>
-                <p>“Expects to be able to find information without struggling”
-                    “Prefers specific and apparent navigation tabs”
-                    “Thinks top menu bar is too small”
-                    “The purpose of some tabs/pages is unclear”
-                    “Looks for speed and clarity in navigation”
-                    “Drop-downs are helpful”
-                    “Good categorization/organization makes browsing easier” </p>
-                <h6 class="font-weight-bold">Usability Tests</h6>
-                <p>During our user interviews we also conducted 5-second usability tests from our participants to learn what some of their thoughts about the website are. We observed for pain points with the website and what they like about the website:</p>
-                <p>“Feels that there are too many different fonts”
-                    “Color scheme is fitting because hearts are usually pink and purple
-                    “Seems like the page is mostly event focused at first glance”
-                    “Too many fonts/does not feel cohesive”
-                    “It is not immediately apparent what the site is for”
-                    “Site is very bright and vibrant”</p>
-            </div>
+    <footer class="footer">
+      <ul class="footer-links">
+        <li class="footer-item">Lourdes Juarez</li>
+        <li class="footer-item">lourdespjuarez@gmail.com</li>
+        <li class="footer-item">763-228-7653</li>
+        <div class="icon-wrapper">
+          <div class="contact-icon">
+            <a
+              href="https://www.linkedin.com/in/name"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                enable-background="new 0 0 48 48"
+                version="1.1"
+                viewBox="0 0 48 48"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="24" cy="24" fill="currentColor" r="24" />
+                <path
+                  d="M17.4,34.9h-4.6V20.1h4.6V34.9z M14.9,18.2L14.9,18.2c-1.7,0-2.8-1.1-2.8-2.6c0-1.5,1.1-2.6,2.8-2.6  c1.7,0,2.8,1.1,2.8,2.6C17.7,17.1,16.7,18.2,14.9,18.2z M35.9,34.9h-5.3v-7.7c0-2-0.8-3.4-2.6-3.4c-1.4,0-2.1,0.9-2.5,1.8  c-0.1,0.3-0.1,0.8-0.1,1.2v8h-5.2c0,0,0.1-13.6,0-14.8h5.2v2.3c0.3-1,2-2.5,4.6-2.5c3.3,0,5.9,2.1,5.9,6.7V34.9z"
+                  fill="#FFFFFF"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="contact-icon">
+            <a
+              href="mailto:john@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48ZM24.3344 22.653C26.2995 22.653 35.8544 17.28 35.8544 17.28L35.8698 16.32C35.8698 15.2602 35.0096 14.4 33.9469 14.4H14.7219C13.6602 14.4 12.8 15.2602 12.8 16.32V17.1754C12.8 17.1754 22.4595 22.653 24.3344 22.653ZM12.8154 20.16C12.8144 20.16 22.4595 25.293 24.3344 25.293C26.3898 25.293 35.8544 20.16 35.8544 20.16L35.8698 31.68C35.8698 32.7398 35.0096 33.6 33.9469 33.6H14.7219C13.6611 33.6 12.8 32.7398 12.8 31.68L12.8154 20.16Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-    </div>
+      </ul>
+      <p class="copyright">© 2021. Lourdes Juarez. All Rights Reserved.</p>
+    </footer>
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
